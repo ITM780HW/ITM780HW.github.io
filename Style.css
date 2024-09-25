@@ -1,4 +1,8 @@
-<html :lang= "eng">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ITM 780 Lab 2</title>
+</head>
 body { 
     font-family: Arial, serif;
     font-size: 12pt;
@@ -9,7 +13,7 @@ body {
 
 h1 {
     font-size: 24pt;
-    color: #1A1A1A
+    color: #1A1A1A;
     text-align: center;
 
 
@@ -34,7 +38,7 @@ p {
 }
 
 a {
-    color: #006CC;
+    color: #0000EE;
 }
 
 a:hover {
