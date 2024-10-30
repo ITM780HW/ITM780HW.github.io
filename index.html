@@ -1,54 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>ITM 780 Lab 2</title>
-<link rel="stylesheet" type="text/css" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affif Elmi </title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <body style="background-color: #FFFFE4</p>;">
+    <div class="nav-links">
+        <a href="#current-courses">Current Courses</a>
+        <a href="#favourite-course">Favourite Course</a>
+        <a href="#academic-awards">Academic Awards</a>
+        <a href="#extracurriculars">Extracurricular's</a>
+    </div>
 
-<h1 align = center>Affif Elmi | 501105955 Lab 2</h1>
-<br>
-<hr>
-<h2>Education</h2>
-<p> <ul><li>Toronto Metropolitian University 2021-2025</li>
-    <li>Humberside Collegiate Institute 2016-2020</li></ul></p>
-<hr>
-<p> I am currently studying Business Technology Management at Toronto Metropolitan University. The Business Technology Management (BTM) program teaches students analytical and problem-solving skills to create business solutions using Information and Communication Technologies.</p>
+    <h1>Affif Elmi </h1>
 
-    <h3>Some course's i'm currently taking this fall:</h3>
-    <table>
-        <td>
-        <ol>
-            <b> <li>RTA 928 Introduction to Game Design</b></li>
-            <p>This course covers the basics of game design and delves into the design of, the game world, character, interactivity, navigation, and gameplay mechanics. </p>
-            <b><li>ITM 780 Web Design and Management</b></li> 
+    <hr>
+
+    <section class="text">
+        <h2>Education</h2>
+        <ul>
+            <li>Toronto Metropolitian University 2021-2025</li>
+            <li>Humberside Collegiate Institute 2016-2020</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <p>I am currently studying Business Technology Management at Toronto Metropolitan University. The Business Technology Management (BTM) program teaches students analytical and problem-solving skills to create business solutions using Information and Communication Technologies.</p>
+
+    <h3 id="current-courses">Some course's I'm currently taking this fall:</h3>
+    <ol>
+        <li>
+            <strong>RTA 928 Introduction to Game Design</strong>
+            <p>This course covers the basics of game design and delves into the design of, the game world, character, interactivity, navigation, and gameplay mechanics.</p>
+        </li>
+        <li>
+            <strong>ITM 780 Web Design and Management</strong>
             <p>This course is an intro to web design and provides students with the skills to develop design, and manage websites.</p>
-            <li><b>SOC 902 Hollywood and Society</b></li>
+        </li>
+        <li>
+            <strong>SOC 902 Hollywood and Society</strong>
             <p>This course delves into the ideas and discussion topics related to Hollywood and society, and how culture impacts films and their interpretations.</p>
-            <li><b>ITM 750 IS Project Management</b></li>
+        </li>
+        <li>
+            <strong>ITM 750 IS Project Management</strong>
             <p>This course provides a high-level understanding of the tools and techniques utilized by project managers when planning and executing projects.</p>
-            <li><b>ITM 707 Strategy, Management, and Acquisition</b></li>
-            <P>This course focuses on the utilization of Information Systems (IS), when analyzing, planning, and executing organizational targets.</P>
-        </ol>
-        </td>
-    </table>
-    
-<hr>
+        </li>
+        <li>
+            <strong>ITM 707 Strategy, Management, and Acquisition</strong>
+            <p>This course focuses on the utilization of Information Systems (IS), when analyzing, planning, and executing organizational targets.</p>
+        </li>
+    </ol>
 
-<h3>Favourite Course</h3>
-<p> One course I found useful was ITM200, which was an intro to python. Coding was always something I wanted to learn and having a professor like Dr. Anjum made learning it so much easier. After the course I continued learning and doing some of my own personal projects.</p>
+    <hr>
 
-<p>  Here's the offical course site:  class: <a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/200/">ITM 200 </a></p></p> 
+    <section>
+        <h3 id="favourite-course">Favourite Course</h3>
+        <p>One course I found useful was ITM200, which was an intro to python. Coding was always something I wanted to learn and having a professor like Dr. Anjum made learning it so much easier. After the course I continued learning and doing some of my own personal projects.</p>
+        <p>Here's the official course site: <a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/200/">ITM 200</a></p>
+    </section>
 
-<hr>
-<h3>Academic Awards</h3>
-<p> <ul><li> Humberside Collegiate Honour Role</li></ul></p>
-<hr>
-<h3>Extracurricular's</h3>
-<ul><li>TRSM Sales Club</li>
-    <li>Black Heritage Club</li></ul></
-<hr>
+    <hr>
 
+    <section>
+        <h3 id="academic-awards">Academic Awards</h3>
+        <ul>
+            <li>Humberside Collegiate Honour Role</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3 id="extracurriculars">Extracurricular's</h3>
+        <ul>
+            <li>TRSM Sales Club</li>
+            <li>Black Heritage Club</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Portfolio Website Info Form</h2>
+        <form>
+            <p>
+                <label for="firstname">First name:</label>
+                <input type="text" id="firstname" name="firstname">
+            </p>
+
+            <p>
+                <label for="lastname">Last name:</label>
+                <input type="text" id="lastname" name="lastname">
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </p>
+
+            <p>
+                <label for="experience">Years of experience:</label>
+                <select id="experience" name="experience">
+                    <option value="less1">Less than 1 year</option>
+                    <option value="1-3">1-3 years</option>
+                    <option value="3-5">3-5 years</option>
+                    <option value="5plus">5+ years</option>
+                </select>
+            </p>
+
+            <p>
+                <label>What is your job title or role?</label><br>
+                <input type="radio" id="manager" name="role" value="manager">
+                <label for="manager">Manager</label><br>
+                <input type="radio" id="hr" name="role" value="hr">
+                <label for="hr">Human Resources</label><br>
+                <input type="radio" id="recruitment" name="role" value="recruitment">
+                <label for="recruitment">Recruitment</label><br>
+                <input type="radio" id="lead" name="role" value="lead">
+                <label for="lead">Lead</label>
+            </p>
+
+            <p>
+                <label>Select factors for portfolio website:</label><br>
+                <input type="checkbox" id="photos" name="factors" value="photos">
+                <label for="photos">Photos</label><br>
+                <input type="checkbox" id="education" name="factors" value="education">
+                <label for="education">Education</label><br>
+                <input type="checkbox" id="contact" name="factors" value="contact">
+                <label for="contact">Contact Info</label><br>
+                <input type="checkbox" id="chat" name="factors" value="chat">
+                <label for="chat">Chat Option</label><br>
+                <input type="checkbox" id="experience" name="factors" value="experience">
+                <label for="experience">Experience</label><br>
+                <input type="checkbox" id="awards" name="factors" value="awards">
+                <label for="awards">Awards</label><br>
+                <input type="checkbox" id="hobbies" name="factors" value="hobbies">
+                <label for="hobbies">Hobbies</label>
+            </p>
+
+            <p>
+                <label for="expectations">What is your expectation of a portfolio website?</label><br>
+                <textarea id="expectations" name="expectations" rows="4"></textarea>
+            </p>
+
+            <p>
+                <input type="button" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+        </form>
+    </section>
+
+    <footer>
+        © Affif Elmi 2024
+    </footer>
 </body>
 </html>
