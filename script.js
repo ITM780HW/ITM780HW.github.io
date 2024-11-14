@@ -59,3 +59,35 @@ window.onload = function() {
     
     document.getElementById("expectations").value = localStorage.getItem("expectations") || "";
 }
+// Accessibility Button Functions
+function changeTextSize() {
+    document.body.classList.toggle('large-text');
+    const isLarge = document.body.classList.contains('large-text');
+    localStorage.setItem('largeText', isLarge);
+}
+    function changeColors() {
+        document.body.classList.toggle('colorblind');
+        const isColorblind = document.body.classList.contains('colorblind');
+        localStorage.setItem('colorblind', isColorblind);
+    }
+
+    function showAltText() {
+        const altDisplay = document.getElementById('altTextDisplay');
+        
+        if (!altDisplay.classList.contains('visible')) {
+            const images = document.querySelectorAll('.portfolio-img');
+            let content = '<div class="alt-text-display">';
+            content += '<h3>Image Descriptions:</h3>';
+            
+            images.forEach((img, index) => {
+                content += `<p><strong>Image ${index + 1}:</strong> ${img.alt}</p>`;
+            });
+            
+            content += '</div>';
+            altDisplay.innerHTML = content;
+            altDisplay.classList.add('visible');
+        } else {
+            altDisplay.classList.remove('visible');
+            altDisplay.innerHTML = '';
+        }
+    }

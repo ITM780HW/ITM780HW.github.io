@@ -5,6 +5,12 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+<!--Accessiblity Control/settings-->
+    <div class="accessibility-controls">
+        <button onclick="changeTextSize()">Change Text Size</button>
+        <button onclick="changeColors()">Change Colors</button>
+        <button onclick="showAltText()">Show Image Descriptions</button>
+    </div>
     <div class="nav-links">
         <a href="#current-courses">Current Courses</a>
         <a href="#favourite-course">Favourite Course</a>
@@ -13,8 +19,43 @@
     </div>
 
     <h1>Affif Elmi </h1>
+   
+  <!--Audio file intergration-->
+    <section class="section text"></section>
+        <h2>Welcome Message</h2>
+        <iframe width="100%" 
+                height="166" 
+                scrolling="no" 
+                frameborder="no" 
+                allow="autoplay" 
+                src="/Users/affifelmi/Library/Mobile Documents/com~apple~CloudDocs/Welcome.mp3.m4a">
+        </iframe>
+        <p class="caption">Audio: "Hello, my name is Affif Elmi and you are on my web portfolio website" recorded on November 13, 2024 at My House</p>
+    </section>
 
+        <!-- Image Gallery -->
+        <section class="section text">
+            <h2>My Photos</h2>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="/Users/affifelmi/Documents/Uni/Year%204/Fall%20Semester/ITM%20780/Lab%208/Images%20for%20site/Pen.jpeg" alt="A black sharpie ball point pen on a wooden desk" class="portfolio-img">
+                    <p class="caption">Favourite Pen - November 13, 2024, taken at my house</p>
+                </div>
+
+                <div class="image-wrapper">
+                    <img src="/Users/affifelmi/Documents/Uni/Year%204/Fall%20Semester/ITM%20780/Lab%208/Images%20for%20site/Cologne.jpeg" alt="A black bottle of Yves Saint Laurent YSL Black Eau de Parfum on a brown wooden desk" class="portfolio-img">
+                    <p class="caption">Favourite Cologne - November 13, 2024, taken at my house</p>
+                </div>
+
+                <div class="image-wrapper">
+                    <img src="/Users/affifelmi/Documents/Uni/Year%204/Fall%20Semester/ITM%20780/Lab%208/Images%20for%20site/Calculator.jpeg" alt="Group project meeting with my team discussing web design strategies in the collaborative study space" class="portfolio-img">
+                    <p class="caption">Favourite Calculator - November 13, 2024, taken at my house</p>
+                </div>
+                
+                <div id="altTextDisplay"></div>
+        </section>
     <hr>
+
 
     <section class="text">
         <h2>Education</h2>
@@ -153,5 +194,6 @@
     <footer>
         © Affif Elmi 2024
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
